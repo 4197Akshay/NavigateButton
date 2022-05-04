@@ -1,0 +1,13 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >  
+      
+    <aura:attribute name="Txt" type="String" default=""/>  
+      
+    <div class="slds-box slds-theme_default">  
+          
+        This is component 1.<br/><br/>  
+        <lightning:input type="text" value="{!v.Txt}" label="Enter some text"/><br/> 
+        <lightning:navigation aura:id="navService"/>  
+        <lightning:button label="Navigate" onclick="{!c.navigateToComTwo}"/>  
+          
+    </div>  
+</aura:component>	

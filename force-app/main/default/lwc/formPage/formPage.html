@@ -1,0 +1,27 @@
+<template>
+    
+   
+        <h1  class="slds-text-heading_large" align="center">
+             Quote Form          
+        </h1>
+ 
+        <div class='slds-box slds-box_x-small'>
+       </p><lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium"  type="text"  label="First Name" value={objFirstName} name="FirstName" onchange={HandlefnameChange}  ></lightning-input>
+        <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Last Name" value={objLastName} name="LastName" onchange={HandlelnameChange} required="true"></lightning-input>
+       <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Company" value={objCompany} name="Company" onchange={HandlecompanyChange} required="true"></lightning-input>
+        <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="email" label="Email" value={objEmail} name="Email" minlength="5" onchange={HandleemailChange} required="true"></lightning-input>
+        <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Phone" value={objPhone} name="Phone" onchange={HandlephoneChange}  ></lightning-input>
+         <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Species" value={objSpecies} name="Species" onchange={HandlespeciesChange} required="true"></lightning-input>
+        <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Grade (int value)" value={objGrade} name="Grade" onchange={HandlegradeChange} required="true"></lightning-input>
+        <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Thickness" value={objThickness} name="Thickness" onchange={HandlethicknessChange} required="true"></lightning-input>
+       <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Quantity(12000 +bf)" value={objQuantity} name="Quantity" onchange={HandlequantityChange} required="true"></lightning-input>
+       <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Unit of Measure (BF or M3)" value={objUnitofMeasure} name="UnitofMeasure" onchange={HandleunitofmeasureChange} required="true"></lightning-input>
+         <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Delivery Destination" value={objDeliveryDestination} name="DeliveryDestination" onchange={HandledeliverydestinationChange} required="true"></lightning-input>
+       <lightning-input class="slds-col slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium" type="text"  label="Special Requests" value={objSpecialRequests} name="SpecialRequests" onchange={HandlespecialrequestChange} required="true"></lightning-input>
+       <lightning-input class="slds-col  slds-size_6-of-12 slds-p-horizontal--small slds-m-bottom--medium " type="text"  label="Comments" value={objComments} name="Comments" onchange={HandlecomentsChange}></lightning-input>
+</br>       
+         <div class="slds-text-align--center slds-m-top--medium" style="text-align:center; width:40px; margin:auto;">
+            <lightning-button type="brand" label="Submit" variant="brand" size="small" onclick={submitAction}></lightning-button>
+        </div>
+</div>
+</template>

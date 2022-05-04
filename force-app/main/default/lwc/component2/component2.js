@@ -13,7 +13,7 @@ export default class Component2 extends LightningElement {
         let newURL = new URL(testURL).searchParams;
         // eslint-disable-next-line no-console
         console.log('id ===> '+newURL.get('category'));
-        this.urlParam = newURL.get('category');
+        //this.urlParam = newURL.get('category');
         this.receivedMessage = newURL.get('category');
     }
 
